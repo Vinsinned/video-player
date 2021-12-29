@@ -148,17 +148,30 @@ main {
 }
 
 /* creatorInfo */ 
+.channelLeft {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.channelRight {
+  display: flex;
+  width: 10%;
+  justify-content: flex-end;
+}
 .channelImage {
-  width: 12%;
+  width: 11.5%;
+  /*width: 12.2%;*/
 }
 .creatorInfo {
-  margin: 0 0 24px;
+  margin: 0 0 16px;
   padding: 0 0 16px;
+  border-bottom: 1px solid #0000001a;
 }
 .channelInformation {
   margin-bottom: 12px;
   padding-top: 16px;
   display: flex;
+  align-items: center;
 }
 .userProfile {
   background-color: palegoldenrod;
@@ -184,6 +197,8 @@ main {
 .channelInfo {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin-right: auto;
 }
 .subscribers {
   font-size: 12px;
@@ -206,9 +221,10 @@ main {
 }
 .description {
   font-size: 14px;
-  margin-left: 64px;
+  margin-left: 10.5%;
   width: 85%;
   line-height: 1.2rem;
+  display: inline-block;
 }
 .descExpand {
   color: #606060;
@@ -220,13 +236,77 @@ main {
 }
 
 /* tags */
-.tags {
-  height: 48px;
-  background-color: brown;
+.tagsContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+.tag {
+  height: 32px;
+  background-color: #0000000D;
+  margin: 8px 8px 8px 0;
+  padding: 0px 12px;
+  border: 1px solid #0000001a;
+  border-radius: 16px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.tag:hover {
+  background-color: #0000001a;
+}
+.currentTag {
+  background-color: #030303;
+  color: #fff;
+}
+.currentTag:hover {
+  background-color: #030303;
 }
 
 /* recommended */
 .videoGrids {
-  background-color: burlywood;
+  margin-top: 10px;
   height: 2082px;
+}
+.recVideo {
+  display: flex;
+  margin-bottom: 8px;
+}
+.recVideoImage {
+  width: 168px;
+  height: 94px;
+  margin-right: 10px;
+}
+.videoCreatorDiv {
+  display: flex;
+}
+.recVideoTitle {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #030303;
+  line-height: 20px;
+  overflow: hidden;
+  max-height: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.recVideoCreator {
+  display: flex;
+  align-items: center;
+  color: #606060;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.recVideoIcon {
+  font-size: 14px;
+  margin-left: 3px;
+  color: #606060;
+  padding: 0;
+}
+.recVideoInfo {
+  color: #606060;
+  font-size: 12px;
+}
+.recVideoRight {
+  display: flex;
+  flex-direction: column;
 }

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <section?>
+  <section>
     <header class="navbarContainer">
       <nav class="navbarElements">
         <div class="navLeft">
@@ -59,19 +59,25 @@
         </div>
       </div>
   </section>
-  <section? class="creatorInfo">
+  <section class="creatorInfo">
     <nav class="channelInformation">
-      <a class="channelImage"><img src="https://yt3.ggpht.com/ytc/AKedOLSxHOOxxa9Af8Bfb2XMop3lm4tor9bViWiC-d5aaw=s48-c-k-c0x00ffffff-no-rj" alt="channel profile"></a>
-      <div class="channelInfo">
-        <a class="channelNameContainer">
-        <h3 class="channelName">Traversy Media</h3>
-        <span class="material-icons verifiedIcon">check_circle</span>
-        </a>
-        <h4 class="subscribers">1.73M subscribers</h4>
+      <div class="channelLeft">
+        <a class="channelImage"><img
+            src="https://yt3.ggpht.com/ytc/AKedOLSxHOOxxa9Af8Bfb2XMop3lm4tor9bViWiC-d5aaw=s48-c-k-c0x00ffffff-no-rj"
+            alt="channel profile"></a>
+        <div class="channelInfo">
+          <a class="channelNameContainer">
+            <h3 class="channelName">Traversy Media</h3>
+            <span class="material-icons verifiedIcon">check_circle</span>
+          </a>
+          <h4 class="subscribers">1.73M subscribers</h4>
+        </div>
       </div>
-      <a class="subscribeButton">
-        <button class="subscribe">SUBSCRIBE</button>
-      </a>
+      <div class="channelRight">
+        <a class="subscribeButton">
+          <button type="button" class="subscribe">SUBSCRIBE</button>
+        </a>
+      </div>
     </nav>
     <div class="description">
       <p>In this video I will go through my 9 suggested steps 
@@ -80,13 +86,183 @@
       <h3 class="descExpand">SHOW MORE</h3>
     </div>
   </section>
-  <section? class="recommended">
-    <div class="tags">tags</div>
+  <section class="recommended">
+    <div class="tagsContainer">
+      <button type="button" class="tag currentTag">All</button>
+      <button type="button" class="tag">Related</button>
+      <button type="button" class="tag">Recently uploaded</button>
+      <button type="button" class="tag">Watched</button>
+    </div>
     <div class="videoGrids">
-      Videos
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/zOjov-2OZ0E/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">Introduction to Programming and Computer Science - Full Course</h3>
+          <h3 class="recVideoCreator">freeCodeCamp.org <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">2.7M views · 1 year ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/hdI2bqOjy3c/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">JavaScript Crash Course For Beginners</h3>
+          <h3 class="recVideoCreator">Traversy Media <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">2.3M views · 2 years ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/xRrSo7mW3EE/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">Can you ACTUALLY trust Mrwhosetheboss?</h3>
+          <h3 class="recVideoCreator">Mrwhosetheboss <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">2.3M views · 9 months ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/lo4BSraYvc8/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">How to Become a Developer</h3>
+          <h3 class="recVideoCreator">freeCodeCamp.org <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">96K views · 3 years ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/CwROcBKXsus/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">Dear Apple.</h3>
+          <h3 class="recVideoCreator">Mrwhosetheboss <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">4.2M views · 5 months ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/_ORc-ckmgHw/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">How To Become a Self-taught Developer (Advice and Stories From Actual Self-taught Developers)</h3>
+          <h3 class="recVideoCreator">DonTheDeveloper</h3>
+          <h4 class="recVideoInfo">86K views · 11 months ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/OQ9zng2S810/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">Why North Korea is the Hardest Country to Escape</h3>
+          <h3 class="recVideoCreator">RealLifeLore <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">9.3M views · 4 months ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/pQN-pnXPaVg/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">Html Full Course - Build a Website Tutorial</h3>
+          <h3 class="recVideoCreator">freeCodeCamp.org <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">4.6M views · 3 years ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/5mxzMmKTG54/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">WARNING: THIS GAME IS DISTURBING | The Convenience Store 夜勤事件 (ALL ENDINGS)</h3>
+          <h3 class="recVideoCreator">CoryxKenshin <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">15M views · 1 year ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/e_TxH59MclA/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">Day in the Life of a Japanese Game Programmer</h3>
+          <h3 class="recVideoCreator">Paolo fromTOKYO <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">13M views · 2 years ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/QMWlRWnAZH8/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">21 HORRIFIC Tech Fails they want you to forget.</h3>
+          <h3 class="recVideoCreator">Mrwhosetheboss <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">11M views · 10 months ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/frIhH-oA2WM/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">Have You Seen My Hairline?</h3>
+          <h3 class="recVideoCreator">JiDion</h3>
+          <h4 class="recVideoInfo">2.3M views · 1 year ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/fBHq7U8hLp8/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">Tech Rewind 2021!</h3>
+          <h3 class="recVideoCreator">Marques Brownlee <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">1.5M views · 3 days ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/IgF3OX8nT0w/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">The Most Powerful Computers You've Never Heard Of</h3>
+          <h3 class="recVideoCreator">Veritasium <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">5M views · 7 days ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/bBcwFWS34ZY/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">22 NIGHTMARE Tech FAILS they want us to forget.</h3>
+          <h3 class="recVideoCreator">Mrwhosetheboss <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">6.6M views · 5 months ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/NyCyknm_n8M/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">$37k to $125k+ Self-taught Software Engineer</h3>
+          <h3 class="recVideoCreator">ROOTs Technology</h3>
+          <h4 class="recVideoInfo">634K views · 1 year ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/F2EfTe7YOT4/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">50 Facts about me | Mrwhosetheboss</h3>
+          <h3 class="recVideoCreator">Mrwhosetheboss <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">2.3M views · 5 days ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/azcrPFhaY9k/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">How To Think Like A Programmer</h3>
+          <h3 class="recVideoCreator">Coding Tech <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">views · ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/UB1O30fR-EE/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">HTML Crash Course For Absolute Beginners</h3>
+          <h3 class="recVideoCreator">Traversy Media <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">5.3M views · 4 Years ago</h4>
+        </div>
+      </div>
+      <div class="recVideo">
+        <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/xIqQbIJGYOU/maxresdefault.jpg">
+        <div class="recVideoRight">
+          <h3 class="recVideoTitle">Why You Shouldn't Close Iphone Apps</h3>
+          <h3 class="recVideoCreator">Apple Explained <span class="material-icons recVideoIcon">check_circle</span></h3>
+          <h4 class="recVideoInfo">1.2M views · 4 months ago</h4>
+        </div>
+      </div>
     </div>
     <div class="comments">
-      comments
+      <div class="comment">
+        <img class="commentImage" alt="commenter" src="https://yt3.ggpht.com/ytc/AKedOLSxHOOxxa9Af8Bfb2XMop3lm4tor9bViWiC-d5aaw=s48-c-k-c0x00ffffff-no-rj">
+        <div class="commentContent">
+          <span class="material-icons-outlined pinIcon">push_pin</span>
+          
+        </div>
+      </div>
     </div>
     <footer>
 
