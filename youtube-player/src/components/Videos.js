@@ -3,7 +3,7 @@ import React from 'react';
 function Videos() {
     return <div>
       <p>VIDEOS AGAIN</p>
-    </div>;
+    </div>
 }
 
 export default Videos
