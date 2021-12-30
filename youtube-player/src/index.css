@@ -264,12 +264,11 @@ main {
 
 /* recommended */
 .videoGrids {
-  margin-top: 10px;
   margin-bottom: 20px;
 }
 .recVideo {
   display: flex;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 .recVideoImage {
   width: 168px;
@@ -312,6 +311,20 @@ main {
 }
 
 /* comments */
+.commentMore {
+  font-size: 6.7px;
+  line-height: 8px;
+}
+.commentContent {
+  width: 95%
+}
+.readMore:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.comments {
+  margin-top: 30px;
+}
 .comment {
   display: flex;
 }
@@ -399,6 +412,8 @@ main {
 .thumbIcon {
   font-size: 16px;
   padding: 8px;
+  color: #030303;
+  cursor: pointer;
 }
 .thumbsUp {
   padding-left: 0px;
@@ -410,6 +425,7 @@ main {
   letter-spacing: 0.5px;
   line-height: 20px;
   padding: 8px 16px;
+  cursor: pointer;
 }
 .replies {
   display: flex;
@@ -429,4 +445,68 @@ main {
 }
 .thumbsDown {
   margin-top: 2px;
+}
+
+/* show more and create comment */
+.showMore {
+  border: 1px solid #065fd4;
+  color: #065fd4;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 9px 15px;
+  background-color: transparent;
+  letter-spacing: 0.5px;
+}
+.commentTopDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0 32px 0;
+}
+.commentFilter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  margin-top: 12px;
+}
+.commentCount {
+  font-size: 16px;
+  color: #030303;
+  margin-right: 32px;
+}
+.filter {
+  display: flex;
+  align-items: center;
+}
+.sortIcon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+.sortBy {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.createCommentImage {
+  border-radius: 9999px;
+  width: 40px;
+  margin-right: 15px;
+}
+.createComment {
+  display: flex;
+}
+.createCommentInput {
+  font-size: 14px;
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0000001a;
+  padding-bottom: 4px;
+  transition: 0.5s;
+}
+.createCommentInput:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
 }
