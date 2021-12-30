@@ -265,7 +265,7 @@ main {
 /* recommended */
 .videoGrids {
   margin-top: 10px;
-  height: 2082px;
+  margin-bottom: 20px;
 }
 .recVideo {
   display: flex;
@@ -319,6 +319,7 @@ main {
   width: 40px;
   height: 40px;
   margin-right: 16px;
+  border-radius: 9999px;
 }
 .pinNotifier {
   font-size: 12px;
@@ -331,6 +332,7 @@ main {
 }
 .commentInfo {
   display: flex;
+  align-items: center;
 }
 .commenter {
   background-color: #888;
@@ -346,20 +348,33 @@ main {
   letter-spacing: 0.5px;
   padding-right: 4px;
 }
+.regularCommenter {
+  color: #030303;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0 4px 2px 0;
+}
 .commentCheckIcon {
   font-size: 12px;
   margin-left: 3px;
   padding: 0;
 }
 .commentTime {
-  padding-left: 4px;
   font-size: 12px;
   color: #606060;
-  margin-top: 4px;
+  margin-left: 4px;
+  margin-bottom: 2px;
+}
+.regularCommentTime {
+  font-size: 12px;
+  color: #606060;
 }
 .commentText {
   font-size: 14px;
   line-height: 1.3rem;
+  margin-top: 5px;
+  width: 95%;
 }
 .readMore {
   font-size: 14px;
@@ -411,4 +426,7 @@ main {
   font-weight: 700;
   letter-spacing: 1px;
   margin-left: 8px;
+}
+.thumbsDown {
+  margin-top: 2px;
 }
