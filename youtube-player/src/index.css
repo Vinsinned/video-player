@@ -111,8 +111,8 @@ main {
   height: 65vh;
 }
 .information {
-  height: 89px;
-  padding: 20px 0 8px;
+  height: 79px;
+  padding: 10px 0 0px;
   border-bottom: 1px solid #0000001a;
 }
 .videoInformation {
@@ -127,7 +127,6 @@ main {
 }
 .views {
   font-size: 14px;
-  width: 60%;
   color: #606060;
 }
 .option {
@@ -137,6 +136,10 @@ main {
 }
 .optionIcon {
   padding: 6px;
+  cursor: pointer;
+}
+.optionContext {
+  cursor: pointer;
 }
 .replyIcon {
   transform: scaleX(-1);
@@ -161,6 +164,10 @@ main {
 .channelImage {
   width: 11.5%;
   /*width: 12.2%;*/
+}
+.channelImageProfile {
+  border-radius: 9999px;
+  cursor: pointer;
 }
 .creatorInfo {
   margin: 0 0 16px;
@@ -189,6 +196,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1rem;
+  cursor: pointer;
 }
 .verifiedIcon {
   font-size: 14px;
@@ -218,6 +226,7 @@ main {
   border: none;
   letter-spacing: 0.5px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .description {
   font-size: 14px;
@@ -233,6 +242,7 @@ main {
   margin-top: 8px;
   font-weight: 700;
   display: inline-block;
+  cursor: pointer;
 }
 
 /* tags */
@@ -240,6 +250,7 @@ main {
   display: flex;
   align-items: center;
   margin-right: 12px;
+  margin-bottom: 10px;
 }
 .tag {
   height: 32px;
@@ -250,6 +261,7 @@ main {
   border-radius: 16px;
   font-size: 14px;
   transition: 0.3s;
+  cursor: pointer;
 }
 .tag:hover {
   background-color: #0000001a;
@@ -268,12 +280,14 @@ main {
 }
 .recVideo {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+  position: relative;
 }
 .recVideoImage {
   width: 168px;
   height: 94px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .videoCreatorDiv {
   display: flex;
@@ -287,6 +301,8 @@ main {
   max-height: 4rem;
   font-weight: 700;
   letter-spacing: 0.5px;
+  cursor: pointer;
+  width: 90%;
 }
 .recVideoCreator {
   display: flex;
@@ -294,20 +310,24 @@ main {
   color: #606060;
   font-size: 12px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .recVideoIcon {
   font-size: 14px;
   margin-left: 3px;
   color: #606060;
   padding: 0;
+  cursor: pointer;
 }
 .recVideoInfo {
   color: #606060;
   font-size: 12px;
+  cursor: pointer;
 }
 .recVideoRight {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 /* comments */
@@ -333,6 +353,7 @@ main {
   height: 40px;
   margin-right: 16px;
   border-radius: 9999px;
+  cursor: pointer;
 }
 .pinNotifier {
   font-size: 12px;
@@ -360,6 +381,7 @@ main {
   line-height: 20px;
   letter-spacing: 0.5px;
   padding-right: 4px;
+  cursor: pointer;
 }
 .regularCommenter {
   color: #030303;
@@ -367,6 +389,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.5px;
   margin: 0 4px 2px 0;
+  cursor: pointer;
 }
 .commentCheckIcon {
   font-size: 12px;
@@ -378,10 +401,18 @@ main {
   color: #606060;
   margin-left: 4px;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 .regularCommentTime {
   font-size: 12px;
   color: #606060;
+  cursor: pointer;
+}
+.commentTime:hover {
+  color: #030303;
+}
+.regularCommentTime:hover {
+  color: #030303;
 }
 .commentText {
   font-size: 14px;
@@ -414,6 +445,7 @@ main {
   padding: 8px;
   color: #030303;
   cursor: pointer;
+  cursor: pointer;
 }
 .thumbsUp {
   padding-left: 0px;
@@ -426,6 +458,7 @@ main {
   line-height: 20px;
   padding: 8px 16px;
   cursor: pointer;
+  cursor: pointer;
 }
 .replies {
   display: flex;
@@ -433,6 +466,7 @@ main {
   padding: 2px 0px 10px;
   margin-left: -5px;
   color: #065fd4;
+  cursor: pointer;
 }
 .expandRepliesIcon {
   font-size: 24px;
@@ -477,6 +511,7 @@ main {
 .filter {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .sortIcon {
   font-size: 24px;
@@ -509,4 +544,110 @@ main {
   outline: none;
   border: none;
   border-bottom: 2px solid black;
+}
+.moreVert {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+.recImageIcon {
+  color: white;
+  background-color: #030303;
+  padding: 2px;
+  border-radius: 3px;
+}
+.recSchedule {
+  position: absolute;
+  top: 4px;
+  left: 136px;
+}
+.recPlaylist {
+  position: absolute;
+  top: 37px;
+  left: 136px;
+}
+.recImageContainer {
+  position: relative;
+  display: none;
+}
+.recVideo:hover > .moreVert {
+  display: block;
+}
+.recVideo:hover > .recImageContainer {
+  display: block;
+}
+.primaryVideoViews {
+  display: flex;
+  width: 50%;
+}
+.smallWindowViews {
+  display: none;
+}
+.navIcon {
+  cursor: pointer;
+}
+
+@media (max-width:600px) {
+  .navSearch {
+    display: none;
+  }
+  .smallWindowViews {
+    display: block;
+  }
+  .largeWindowViews {
+    display: none;
+  }
+}
+@media (min-width:600px) {
+  .smallWindowViews {
+    display: none;
+  }
+  .largeWindowViews {
+    display: block;
+  }
+  .mediaQueryMic {
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 9999px;
+    background-color: #f9f9f9;
+    margin-left: 8px;
+  }
+  .navMiddle {
+    justify-content: center;
+  }
+  .searchBar {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    max-width: 582px;
+  }
+  .navSearch {
+    border: 1px solid #ccc;
+    border-right: none;
+    font-size: 16px;
+    padding: 2px 6px;
+    border-radius: 2px 0 0 2px;
+    box-shadow: inset 0 1px 2px #eee;
+    line-height: 24px;
+    font-weight: 400;
+    height: 35px;
+    width: 100%;
+    max-width: 532px;
+  }
+  .navSearchIcon {
+    border: 1px solid #ccc;
+    font-size: 24px;
+    padding: 1px 6px;
+    background-color: #f8f8f8;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    margin: auto;
+    padding: 7px 20px 8px 20px;
+    transition: 0.3s;
+  }
+  .navSearchIcon:hover {
+    background-color: #f0f0f0;
+
+  }
 }

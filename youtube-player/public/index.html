@@ -12,18 +12,21 @@
     <header class="navbarContainer">
       <nav class="navbarElements">
         <div class="navLeft">
-          <a><span class="material-icons menuIcon">menu</span></a>
-          <a><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png" alt="logo"></a>
+          <a><span class="material-icons menuIcon navIcon">menu</span></a>
+          <a><img class="logo navIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png" alt="logo"></a>
         </div>
         <div class="navMiddle">
-          <a><span class="material-icons">search</span></a>
-          <a><span class="material-icons">mic</span></a>
+          <div class="searchBar">
+            <input type="text" placeholder="Search" class="navSearch">
+            <a><span class="material-icons navIcon navSearchIcon">search</span></a>
+          </div>
+          <a><span class="material-icons navIcon mediaQueryMic">mic</span></a>
         </div>
         <div class="navRight">
-          <a><span class="material-icons">video_call</span></a>
-          <a><span class="material-icons">apps</span></a>
-          <a><span class="material-icons">notifications</span></a>
-          <a><img class="userImage" alt="profile" src="https://yt3.ggpht.com/yti/APfAmoHPgRkvqlk5FDuueTGR4AXiZ0SNGVLIJdYBYawO5g=s88-c-k-c0x00ffffff-no-rj-mo"></a>
+          <a><span class="material-icons navIcon">video_call</span></a>
+          <a><span class="material-icons navIcon">apps</span></a>
+          <a><span class="material-icons navIcon">notifications</span></a>
+          <a><img class="userImage navIcon" alt="profile" src="https://yt3.ggpht.com/yti/APfAmoHPgRkvqlk5FDuueTGR4AXiZ0SNGVLIJdYBYawO5g=s88-c-k-c0x00ffffff-no-rj-mo"></a>
         </div>
       </nav>
     </header>
@@ -36,23 +39,27 @@
       <div class="information">
         <h1 class="videoTitle">Guide To Becoming A Self-Taught Software Developer</h1>
         <div class="videoInformation">
-          <h3 class="views">639,522 views · Mar 10, 2020</h3>
+          <div class="primaryVideoViews">
+            <h3 class="views">639,522 views</h3>
+            <h3 class="views smallWindowViews">...</h3>
+            <h3 class="views largeWindowViews">&nbsp;· Mar 10, 2020</h3>
+          </div>
           <div class="videoOptions">
             <div class="thumbsUp option">
               <span class="material-icons-outlined optionIcon"> thumb_up_off_alt </span>
-              <h3>27K</h3>
+              <h3 class="optionContext">27K</h3>
             </div>
             <div class="thumbsDown option">
               <span class="material-icons-outlined optionIcon"> thumb_down_off_alt </span>
-              <h3>DISKLIKE</h3>
+              <h3 class="optionContext">DISKLIKE</h3>
             </div>
             <div class="share option">
               <span class="material-icons-outlined replyIcon optionIcon"> reply </span>
-              <h3>SHARE</h3>
+              <h3 class="optionContext">SHARE</h3>
             </div>
             <div class="playlistAdd option">
               <span class="material-icons-outlined optionIcon"> playlist_add </span>
-              <h3>SAVE</h3>
+              <h3 class="optionContext">SAVE</h3>
             </div>
             <span class="material-icons-outlined optionIcon"> more_horiz </span>
           </div>
@@ -62,7 +69,7 @@
   <section class="creatorInfo">
     <nav class="channelInformation">
       <div class="channelLeft">
-        <a class="channelImage"><img
+        <a class="channelImage"><img class="channelImageProfile"
             src="https://yt3.ggpht.com/ytc/AKedOLSxHOOxxa9Af8Bfb2XMop3lm4tor9bViWiC-d5aaw=s48-c-k-c0x00ffffff-no-rj"
             alt="channel profile"></a>
         <div class="channelInfo">
@@ -95,6 +102,11 @@
     </div>
     <div class="videoGrids">
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/zOjov-2OZ0E/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">Introduction to Programming and Computer Science - Full Course</h3>
@@ -103,6 +115,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/hdI2bqOjy3c/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">JavaScript Crash Course For Beginners</h3>
@@ -111,6 +128,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/xRrSo7mW3EE/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">Can you ACTUALLY trust Mrwhosetheboss?</h3>
@@ -119,6 +141,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/lo4BSraYvc8/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">How to Become a Developer</h3>
@@ -127,6 +154,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/CwROcBKXsus/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">Dear Apple.</h3>
@@ -135,6 +167,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/_ORc-ckmgHw/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">How To Become a Self-taught Developer (Advice and Stories From Actual Self-taught Developers)</h3>
@@ -143,6 +180,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/OQ9zng2S810/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">Why North Korea is the Hardest Country to Escape</h3>
@@ -151,6 +193,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/pQN-pnXPaVg/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">Html Full Course - Build a Website Tutorial</h3>
@@ -159,6 +206,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/5mxzMmKTG54/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">WARNING: THIS GAME IS DISTURBING | The Convenience Store 夜勤事件 (ALL ENDINGS)</h3>
@@ -167,6 +219,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/e_TxH59MclA/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">Day in the Life of a Japanese Game Programmer</h3>
@@ -175,6 +232,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/QMWlRWnAZH8/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">21 HORRIFIC Tech Fails they want you to forget.</h3>
@@ -183,6 +245,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/frIhH-oA2WM/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">Have You Seen My Hairline?</h3>
@@ -191,6 +258,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/fBHq7U8hLp8/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">Tech Rewind 2021!</h3>
@@ -199,6 +271,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/IgF3OX8nT0w/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">The Most Powerful Computers You've Never Heard Of</h3>
@@ -207,6 +284,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/bBcwFWS34ZY/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">22 NIGHTMARE Tech FAILS they want us to forget.</h3>
@@ -215,6 +297,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/NyCyknm_n8M/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">$37k to $125k+ Self-taught Software Engineer</h3>
@@ -223,6 +310,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/F2EfTe7YOT4/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">50 Facts about me | Mrwhosetheboss</h3>
@@ -231,6 +323,7 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/azcrPFhaY9k/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">How To Think Like A Programmer</h3>
@@ -239,6 +332,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/UB1O30fR-EE/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">HTML Crash Course For Absolute Beginners</h3>
@@ -247,6 +345,11 @@
         </div>
       </div>
       <div class="recVideo">
+        <span class="material-icons-outlined moreVert">more_vert</span>
+        <div class="recImageContainer">
+          <span class="material-icons-outlined recImageIcon recSchedule">schedule</span>
+          <span class="material-icons-outlined recImageIcon recPlaylist">playlist_add</span>
+        </div>
         <img class="recVideoImage" alt="recommended video" src="https://i3.ytimg.com/vi/xIqQbIJGYOU/maxresdefault.jpg">
         <div class="recVideoRight">
           <h3 class="recVideoTitle">Why You Shouldn't Close Iphone Apps</h3>
